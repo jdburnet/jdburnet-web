@@ -140,8 +140,8 @@ const toolsAndTech = (
 
 const jdburnetWeb = (
   <Project
-    name="jdburnet.github.io"
-    url="https://github.com/jdburnet/jdburnet.github.io"
+    name="jdburnet-web"
+    url="https://github.com/jdburnet/jdburnet-web"
     description="personal website using static website generator gatsbyjs"
   />
 );
