@@ -174,9 +174,6 @@ const projects = (
   <div>
     <ul
       className={css`
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
         list-style: none;
         margin-left: 0;
       `}

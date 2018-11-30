@@ -1,9 +1,7 @@
 import React from 'react';
-import { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 
 import { ExternalLink } from '../InlineLink';
-import { rhythm } from '../../utils/typography';
 
 const Project = (props) => {
   const {
@@ -12,11 +10,7 @@ const Project = (props) => {
     description,
   } = props;
   return (
-    <li
-      className={css`
-        padding-right: ${rhythm(0.5)};
-      `}
-    >
+    <li>
       <ExternalLink
         to={url}
         text={name}
