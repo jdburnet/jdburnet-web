@@ -126,7 +126,7 @@ const ucsc = (
 const toolsAndTech = (
   <SkillsSubSection
     skills={[
-      'Python (expert)',
+      'Python (proficient)',
       'C (proficient)',
       'Rust (prior experience)',
       'JavaScript (prior experience)',
