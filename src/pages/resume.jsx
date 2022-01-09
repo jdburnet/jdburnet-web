@@ -130,7 +130,6 @@ const toolsAndTech = (
       'C (proficient)',
       'Bash (proficient)',
       'Rust (prior experience)',
-      'JavaScript (prior experience)',
       'Git (proficient)',
       'Gerrit (proficient)',
       'Make (proficient)',
