@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "jdburnet-web",
+  "description": "Jackson Burnette's web page",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop --host 0.0.0.0",
