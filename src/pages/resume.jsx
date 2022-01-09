@@ -131,7 +131,6 @@ const toolsAndTech = (
       'Bash (proficient)',
       'Rust (prior experience)',
       'Git (proficient)',
-      'Gerrit (proficient)',
       'Make (proficient)',
     ]}
   />
