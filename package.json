@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "lint": "eslint src/ --ext .jsx --ext .js",
+    "lint-fix": "eslint src/ --ext .jsx --ext .js --fix",
     "deploy": "gatsby build && gh-pages -d public -b master -r git@github.com:jdburnet/jdburnet.github.io.git"
   },
   "dependencies": {
