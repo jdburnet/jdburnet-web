@@ -8,11 +8,42 @@ import ExperienceSubSection from '../components/resume/ExperienceSubSection';
 import SkillsSubSection from '../components/resume/SkillsSubSection';
 import Project from '../components/resume/Project';
 
+const whoop = (
+  <ExperienceSubSection
+    company="WHOOP"
+    experiences={[
+      <Experience
+        title="Senior Embedded Engineer"
+        start="September 2020"
+        end="present"
+        contents={[ ]}
+      />,
+      <Experience
+        title="Embedded Engineer II"
+        start="September 2019"
+        end="August 2020"
+        contents={[
+          'Lead BLE connectivity firmware development on nRF52840 using the '
+          + 'Nordic SDK in a bare metal environment',
+          'Use Ceedling, Unity, and CMock to bootstrap unit tests in a legacy '
+          + 'code base',
+          'Design and lead development of integration test framework in main '
+          + 'application firmware',
+          'Establish relationship with vendor of IoT field debugging and '
+          + 'observability solution and integrate into firmware',
+          'Take part in the evaluation of hardware and software platforms for '
+          + 'future use',
+        ]}
+      />,
+    ]}
+  />
+);
+
 const systemsEngineerExperience = (
   <Experience
     title="Systems Validation Engineer"
     start="February 2017"
-    end="present"
+    end="August 2019"
     contents={[
       'Core developer of concurrency focused testing framework, owner of '
       + 'register access tool and logging module',
@@ -190,6 +221,7 @@ const resume = () => (
       <ResumeSection
         title="Work"
         subsections={[
+          whoop,
           intel,
           genentech,
           tutoringRocks,
