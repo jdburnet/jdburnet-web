@@ -24,7 +24,6 @@ const ResumeSection = (props) => {
       <h2>
         <span
           css={css`
-            border-bottom: 1px solid;
             padding-left: ${rhythm(0.10)};
             padding-right: ${rhythm(0.10)};
           `}
