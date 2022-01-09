@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
 import { rhythm } from '../utils/typography';
 
@@ -26,6 +27,11 @@ function HeaderLink(props) {
     </Link>
   );
 }
+
+HeaderLink.propTypes = {
+  to: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 function Header(props) {
   const {
@@ -62,5 +68,9 @@ function Header(props) {
     </div>
   );
 }
+
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Header;

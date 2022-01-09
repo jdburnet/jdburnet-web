@@ -1,6 +1,12 @@
 /** @jsx jsx */
 import { Link } from 'gatsby';
 import { css, jsx } from '@emotion/react';
+import PropTypes from 'prop-types';
+
+const linkPropTypesCommon = {
+  to: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 function ExternalLink(props) {
   const {
@@ -21,6 +27,8 @@ function ExternalLink(props) {
   );
 }
 
+ExternalLink.propTypes = linkPropTypesCommon;
+
 function InternalLink(props) {
   const {
     to,
@@ -39,6 +47,8 @@ function InternalLink(props) {
     </Link>
   );
 }
+
+InternalLink.propTypes = linkPropTypesCommon;
 
 export {
   ExternalLink,
