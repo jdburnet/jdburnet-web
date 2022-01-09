@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import { css } from 'react-emotion';
+import { css, jsx } from '@emotion/react';
 
 import Layout from '../components/Layout';
 import { ExternalLink } from '../components/InlineLink';

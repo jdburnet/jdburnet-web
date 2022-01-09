@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import { css } from 'react-emotion';
+import { css, jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 
 import listMaker from '../../utils/listMaker';
@@ -16,14 +17,14 @@ const ResumeSection = (props) => {
   const listItems = listMaker(subsections);
   return (
     <div
-      className={css`
+      css={css`
         display: grid;
         grid-template-columns: ${rhythm(7)} auto;
       `}
     >
       <h2>
         <span
-          className={css`
+          css={css`
             border-bottom: 1px solid;
             padding-left: ${rhythm(0.10)};
             padding-right: ${rhythm(0.10)};
@@ -33,7 +34,7 @@ const ResumeSection = (props) => {
         </span>
       </h2>
       <ul
-        className={css`
+        css={css`
           list-style: none;
           margin-left: 0;
         `}

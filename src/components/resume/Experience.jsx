@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import { css } from 'react-emotion';
+import { css, jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 
 import listMaker from '../../utils/listMaker';
@@ -15,7 +16,7 @@ const Experience = (props) => {
   return (
     <div>
       <div
-        className={css`
+        css={css`
           display: flex;
           justify-content: space-between;
         `}
@@ -33,7 +34,7 @@ const Experience = (props) => {
       </div>
       <div>
         <ul
-          className={css`
+          css={css`
             list-style: none;
             margin-left: 0;
           `}

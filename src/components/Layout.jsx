@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import { css } from 'react-emotion';
+import { css, jsx } from '@emotion/react';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './Header'
@@ -19,7 +20,7 @@ export default ({ children }) => (
     `}
     render={data => (
       <div
-        className={css`
+        css={css`
           margin: 0 auto;
           maxwidth: 700px;
           padding: ${rhythm(2)};

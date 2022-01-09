@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import { css } from 'react-emotion';
+import { css, jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 
 import { rhythm } from '../../utils/typography';
@@ -11,7 +12,7 @@ const SkillsSubSection = (props) => {
   const listItems = skills.map(skill => (
     <li
       key={skill}
-      className={css`
+      css={css`
         padding-right: ${rhythm(0.5)};
       `}
     >
@@ -21,7 +22,7 @@ const SkillsSubSection = (props) => {
   return (
     <div>
       <ul
-        className={css`
+        css={css`
           display: flex;
           justify-content: flex-start;
           flex-wrap: wrap;

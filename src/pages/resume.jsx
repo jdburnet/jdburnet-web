@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import { css } from 'react-emotion';
+import { css, jsx } from '@emotion/react';
 
 import Layout from '../components/Layout';
 import ResumeSection from '../components/resume/ResumeSection';
@@ -173,7 +174,7 @@ const evergreenDb = (
 const projects = (
   <div>
     <ul
-      className={css`
+      css={css`
         list-style: none;
         margin-left: 0;
       `}

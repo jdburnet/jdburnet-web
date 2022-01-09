@@ -1,6 +1,7 @@
+/** @jsx jsx */
 import React from 'react';
 import { Link } from 'gatsby';
-import { css } from 'react-emotion';
+import { css, jsx } from '@emotion/react';
 
 const ExternalLink = (props) => {
   const {
@@ -10,7 +11,7 @@ const ExternalLink = (props) => {
   return (
     <a
       href={to}
-      className={css`
+      css={css`
         text-decoration: none;
       `}
     >
@@ -29,7 +30,7 @@ const InternalLink = (props) => {
   return (
     <Link
       to={to}
-      className={css`
+      css={css`
         text-decoration: none;
       `}
     >

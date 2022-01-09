@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import { css } from 'react-emotion';
+import { css, jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 
 import listMaker from '../../utils/listMaker';
@@ -19,7 +20,7 @@ const ExperienceSubSection = (props) => {
       </h3>
       <div>
         <ul
-          className={css`
+          css={css`
             list-style: none;
             margin-left: 0;
           `}
