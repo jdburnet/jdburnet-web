@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { ExternalLink } from '../InlineLink';
 
-const Project = (props) => {
+function Project(props) {
   const {
     name,
     url,
@@ -20,13 +20,12 @@ const Project = (props) => {
       {description}
     </li>
   );
-};
+}
 
 Project.propTypes = {
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
-
 
 export default Project;

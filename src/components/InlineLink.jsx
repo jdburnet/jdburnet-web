@@ -2,7 +2,7 @@
 import { Link } from 'gatsby';
 import { css, jsx } from '@emotion/react';
 
-const ExternalLink = (props) => {
+function ExternalLink(props) {
   const {
     to,
     text,
@@ -19,9 +19,9 @@ const ExternalLink = (props) => {
       {' '}
     </a>
   );
-};
+}
 
-const InternalLink = (props) => {
+function InternalLink(props) {
   const {
     to,
     text,
@@ -38,7 +38,7 @@ const InternalLink = (props) => {
       {' '}
     </Link>
   );
-};
+}
 
 export {
   ExternalLink,

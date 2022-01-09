@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import listMaker from '../../utils/listMaker';
 
-const Experience = (props) => {
+function Experience(props) {
   const {
     title,
     start,
@@ -43,7 +43,7 @@ const Experience = (props) => {
       </div>
     </div>
   );
-};
+}
 
 Experience.propTypes = {
   title: PropTypes.string.isRequired,

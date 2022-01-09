@@ -14,12 +14,12 @@ const index = () => (
       />
       if you would like to get in touch, head to the
       <InternalLink
-        to={`/about/`}
+        to="/about/"
         text="about"
       />
       page to find out a little bit more about me and check out my
       <InternalLink
-        to={`/resume/`}
+        to="/resume/"
         text="resume"
       />
     </p>

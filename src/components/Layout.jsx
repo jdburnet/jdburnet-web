@@ -2,9 +2,8 @@
 import { css, jsx } from '@emotion/react';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './Header'
+import Header from './Header';
 import { rhythm } from '../utils/typography';
-
 
 const layout = ({ children }) => (
   <StaticQuery
@@ -17,7 +16,7 @@ const layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <div
         css={css`
           margin: 0 auto;

@@ -8,7 +8,7 @@ import { rhythm } from '../../utils/typography';
 import ExperienceSubSection from './ExperienceSubSection';
 import SkillsSubSection from './SkillsSubSection';
 
-const ResumeSection = (props) => {
+function ResumeSection(props) {
   const {
     subsections,
     title,
@@ -41,7 +41,7 @@ const ResumeSection = (props) => {
       </ul>
     </div>
   );
-};
+}
 
 ResumeSection.propTypes = {
   subsections: PropTypes.oneOfType([

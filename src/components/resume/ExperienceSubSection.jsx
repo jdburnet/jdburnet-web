@@ -6,7 +6,7 @@ import listMaker from '../../utils/listMaker';
 
 import Experience from './Experience';
 
-const ExperienceSubSection = (props) => {
+function ExperienceSubSection(props) {
   const {
     company,
     experiences,
@@ -29,7 +29,7 @@ const ExperienceSubSection = (props) => {
       </div>
     </div>
   );
-};
+}
 
 ExperienceSubSection.propTypes = {
   company: PropTypes.string.isRequired,

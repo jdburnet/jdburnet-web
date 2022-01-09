@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 import { rhythm } from '../../utils/typography';
 
-const SkillsSubSection = (props) => {
+function SkillsSubSection(props) {
   const {
     skills,
   } = props;
-  const listItems = skills.map(skill => (
+  const listItems = skills.map((skill) => (
     <li
       key={skill}
       css={css`
@@ -33,7 +33,7 @@ const SkillsSubSection = (props) => {
       </ul>
     </div>
   );
-};
+}
 
 SkillsSubSection.propTypes = {
   skills: PropTypes.string.isRequired,
