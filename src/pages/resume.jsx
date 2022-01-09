@@ -128,9 +128,9 @@ const toolsAndTech = (
     skills={[
       'Python (proficient)',
       'C (proficient)',
+      'Bash (proficient)',
       'Rust (prior experience)',
       'JavaScript (prior experience)',
-      'Linux (proficient)',
       'Git (proficient)',
       'Gerrit (proficient)',
       'Make (proficient)',
