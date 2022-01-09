@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/Layout';
 import { ExternalLink } from '../components/InlineLink';
 
-export default () => (
+const about = () => (
   <Layout>
     <h1>about me</h1>
     <p>
@@ -20,3 +20,5 @@ export default () => (
     </p>
   </Layout>
 );
+
+export default about;

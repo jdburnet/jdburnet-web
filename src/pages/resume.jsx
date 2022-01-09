@@ -186,7 +186,7 @@ const projects = (
   </div>
 );
 
-export default () => (
+const resume = () => (
   <Layout>
     <div>
       <ResumeSection
@@ -219,3 +219,5 @@ export default () => (
     </div>
   </Layout>
 );
+
+export default resume;

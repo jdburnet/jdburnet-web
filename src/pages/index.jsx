@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import { ExternalLink, InternalLink } from '../components/InlineLink';
 
-export default () => (
+const index = () => (
   <Layout>
     <h1>Hi, I&#39;m Jackson</h1>
     <p>
@@ -26,3 +26,5 @@ export default () => (
     </p>
   </Layout>
 );
+
+export default index;
