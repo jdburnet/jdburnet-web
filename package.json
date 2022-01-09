@@ -7,6 +7,7 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "lint": "eslint src/ --ext .jsx --ext .js",
     "deploy": "gatsby build && gh-pages -d public -b master -r git@github.com:jdburnet/jdburnet.github.io.git"
   },
   "dependencies": {
