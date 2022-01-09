@@ -5,9 +5,13 @@ import { Link } from 'gatsby';
 import { rhythm } from '../utils/typography';
 
 function HeaderLink(props) {
+  const {
+    to,
+    name,
+  } = props;
   return (
     <Link
-      to={props.to}
+      to={to}
       css={css`
       text-decoration: none;
     `}
@@ -17,13 +21,16 @@ function HeaderLink(props) {
         margin-bottom: ${rhythm(2)};
       `}
       >
-        {props.name}
+        {name}
       </h3>
     </Link>
   );
 }
 
 function Header(props) {
+  const {
+    title,
+  } = props;
   return (
     <div>
       <div
@@ -37,7 +44,7 @@ function Header(props) {
       >
         <HeaderLink
           to="/"
-          name={props.title}
+          name={title}
         />
         <HeaderLink
           to="/"
